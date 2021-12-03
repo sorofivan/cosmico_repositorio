@@ -1,0 +1,43 @@
+/* ----------> HEADER INDEX */
+.header__indexflex--container {
+  @extend .footer__indexflex--container;
+  justify-content: flex-start;
+  background-color: unset;
+  div {
+    margin: 15px;
+    img {
+      height: 30px;
+    }
+    img:hover {
+      transform: scale(1.1, 1.1);
+    }
+  }
+}
+
+/* ----------> HEADER SECTIONS */
+header {
+  .navbar-dark {
+    background: $gradient-color;
+    div {
+      a {
+        img {
+          height: 30px;
+        }
+        img:hover {
+          transform: scale(1.1, 1.1);
+        }
+      }
+      .navbar-nav {
+        .nav-item {
+          text-transform: $big-font;
+        }
+        .dropdown-menu {
+          .dropdown-item:hover {
+            background: $green-color;
+            color: $white-color;
+          }
+        }
+      }
+    }
+  }
+}

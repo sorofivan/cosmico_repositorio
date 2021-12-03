@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="cuadernos, artesanales, cosmico, contacto, consulta, preguntas, cósmico">
+  <meta name="description"
+    content="En Cósmico Cuadernos creamos una gran cantidad de cuadernos, agendas, y albumes; todos ellos elaborados con nuestras propias manos, y desde el diseño que más te guste. ¿Querés contactarnos? ¡Ingresá acá!">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="layout/estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@300&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/logo2.ico">
+  <title>Contacto | Cósmico</title>
+</head>
+
+<body>
+  <!-- Start Header -->
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="inicio.html">
+          <img src="img/header_logo.png" alt="Logo Cósmico">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="inicio.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Tienda</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="cuadernos.html">Cuadernos</a></li>
+                <li><a class="dropdown-item" href="agendas.html">Agendas</a></li>
+                <li><a class="dropdown-item" href="albumes.html">Albumes</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Escribe aquí">
+            <button class="btn btn-success" type="button">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End Header -->
+  <!-- Start Main -->
+  <main class="main__sections">
+    <form class="main__contact--form">
+      <fieldset>
+        <legend>¡Haceme tu consulta!</legend>
+        <div class="form-group">
+          <div class="col item-margin">
+            <label class="label-margin" for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+          </div>
+          <div class="col item-margin">
+            <label for="apellido">Apellido:</label>
+            <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido">
+          </div>
+          <div class="col item-margin">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
+          </div>
+          <div class="item-margin">
+            <p class="form-text text-muted">No compartiremos sus datos.</p>
+          </div>
+        </div>
+        <div class="item-margin form-group col-md-6">
+          <label for="motivo">Motivo de consulta:</label>
+          <select class="form-control" id="motivo">
+            <option selected>Selecciona el motivo</option>
+            <option value="1">Cuadernos</option>
+            <option value="2">Agendas</option>
+            <option value="3">Albumes</option>
+            <option value="4">Precios</option>
+            <option value="5">Pagos</option>
+            <option value="6">Envíos</option>
+            <option value="7">Otro</option>
+          </select>
+        </div>
+        <div class="item-margin">
+          <label for="consulta" class="block-label">Escribime tu consulta:</label>
+          <textarea name="consulta" class="form-control" id="consulta" placeholder="Ingresa tu consulta" cols="30"
+            rows="5" maxlength="1000"></textarea>
+        </div>
+        <div class="form-check item-margin">
+          <input type="checkbox" class="form-check-input" id="novedades">
+          <label class="label-news form-check-label" for="novedades">Recibir novedades</label>
+        </div>
+        <button type="submit" class="btn btn-success">Enviar</button>
+        <button type="submit" class="btn btn-success">Limpiar</button>
+      </fieldset>
+    </form>
+  </main>
+  <!-- End Main -->
+  <!-- Start Footer -->
+  <footer class="text-center text-white footer__sections">
+    <div class="container">
+      <section class="mt-5">
+        <div class="row text-center d-flex justify-content-center pt-5">
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="inicio.html" class="text-white">Inicio</a>
+            </h6>
+          </div>
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="nosotros.html" class="text-white">Nosotros</a>
+            </h6>
+          </div>
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="contacto.html" class="text-white">Contacto</a>
+            </h6>
+          </div>
+        </div>
+      </section>
+      <hr class="my-5" />
+      <section class="text-center mb-5">
+        <a class="text-white me-4" href="https://www.facebook.com/cosmicocuadernos" target="_blank">
+          <i class="color-effect fab fa-facebook-square fa-2x"></i>
+        </a>
+        <a class="footer__logo me-4" href="index.html">
+          <img src="img/cosmico.png" alt="Logo Planeta">
+        </a>
+        <a class="text-white me-4" href="https://www.instagram.com/cosmico_cuadernos/" target="_blank">
+          <i class="color-effect fab fa-instagram fa-2x"></i>
+        </a>
+      </section>
+    </div>
+    <div class="banner-transparency text-center p-3">
+      © 2020 Copyright:
+      <a class="text-white" href="#">cosmicocuadernos.com</a>
+    </div>
+  </footer>
+  <!-- End Footer -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+  integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/9e766ea8e6.js" crossorigin="anonymous"></script>
+
+</html>

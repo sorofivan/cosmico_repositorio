@@ -1,0 +1,17 @@
+/* ----------> VARIABLES */
+$big-font: uppercase;
+$white-color: #fff;
+$light-grey: #ddd;
+$grey-color: #c5c5c5;
+$green-color: #198754;
+$purple-color: #2a0079;
+$middle-purple: #1f053e;
+$black-purple: #060516;
+$black-color: #000;
+$transparency: rgba(0, 0, 0, 0.2);
+$gradient-color: linear-gradient(
+  30deg,
+  $black-purple 0%,
+  $middle-purple 50%,
+  $purple-color 100%
+);

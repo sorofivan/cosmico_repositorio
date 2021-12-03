@@ -1,0 +1,452 @@
+/* ----------> VARIABLES */
+/* ----------> GLOBAL */
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Gluten', cursive;
+}
+
+* body {
+  line-height: 1.4;
+}
+
+* body a {
+  text-decoration: none;
+}
+
+/* ----------> BODY INDEX */
+.body__index--background {
+  background-image: url("../img/background-image.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ----------> HEADER INDEX */
+.header__indexflex--container {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: unset;
+}
+
+.header__indexflex--container div {
+  margin: 15px;
+}
+
+.header__indexflex--container div img {
+  height: 30px;
+}
+
+.header__indexflex--container div img:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+/* ----------> HEADER SECTIONS */
+header .navbar-dark {
+  background: linear-gradient(30deg, #060516 0%, #1f053e 50%, #2a0079 100%);
+}
+
+header .navbar-dark div a img {
+  height: 30px;
+}
+
+header .navbar-dark div a img:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+header .navbar-dark div .navbar-nav .nav-item {
+  text-transform: uppercase;
+}
+
+header .navbar-dark div .navbar-nav .dropdown-menu .dropdown-item:hover {
+  background: #198754;
+  color: #fff;
+}
+
+/* ----------> MAIN INDEX */
+.main__indexflex--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: unset;
+}
+
+.main__indexflex--container .main__index--enter {
+  color: #fff;
+  font-size: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 360px) {
+  .main__indexflex--container .main__index--enter {
+    margin-top: 75px;
+  }
+}
+
+.main__indexflex--container .main__enter--image {
+  height: 40px;
+}
+
+.main__indexflex--container .main__enter--image img {
+  height: 100%;
+}
+
+.main__indexflex--container .main__enter--image {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.main__indexflex--container .main__index--name {
+  margin: 20px;
+}
+
+.main__indexflex--container .main__index--name img {
+  height: 230px;
+}
+
+@media (max-width: 360px) {
+  .main__indexflex--container .main__index--name img {
+    height: 170px;
+  }
+}
+
+.main__indexflex--container .main__index--name img:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.main__indexflex--container .main__index--follow {
+  color: #fff;
+  font-size: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 210px 0px 15px 0px;
+}
+
+@media (max-width: 360px) {
+  .main__indexflex--container .main__index--follow {
+    margin: 250px 0px 15px 0px;
+  }
+}
+
+.main__indexflex--container .main__index--redes a {
+  color: #fff;
+}
+
+.main__indexflex--container .main__index--redes a i {
+  margin: 5px 20px 260px 20px;
+}
+
+@media (max-width: 360px) {
+  .main__indexflex--container .main__index--redes a i {
+    margin: 5px 20px 240px 20px;
+  }
+}
+
+.main__indexflex--container .main__index--redes a .color-effect:hover {
+  color: #198754;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+/* ----------> MAIN SECTIONS */
+.main__sections {
+  background-color: #fff;
+}
+
+.main__sections .main__home--title, .main__sections .main__about--title {
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  width: 350px;
+  margin: 2rem 32rem 2rem 32rem;
+  padding: 6px 5px 0px 5px;
+  border-radius: 10px;
+}
+
+@media (max-width: 360px) {
+  .main__sections .main__home--title, .main__sections .main__about--title {
+    margin-left: 42px;
+    width: 275px;
+  }
+}
+
+.main__sections .main__home--title:hover, .main__sections .main__about--title:hover {
+  background: #198754;
+  color: #fff;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.main__sections .main__about--title {
+  margin-left: 33.5rem;
+  margin-right: 33.5rem;
+  width: 300px;
+}
+
+@media (max-width: 360px) {
+  .main__sections .main__about--title {
+    margin-left: 62px;
+    width: 235px;
+  }
+}
+
+.main__sections .main__text p {
+  color: #000;
+  margin: 0rem 100px 2rem 100px;
+  text-align: justify;
+  font-size: 110%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+@media (max-width: 360px) {
+  .main__sections .main__text p {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+.main__sections .main__text .bottom__text {
+  margin-top: 2.5rem;
+  margin-bottom: -0.5rem;
+}
+
+.main__sections .carousel .carousel-item {
+  height: 500px;
+}
+
+@media (max-width: 360px) {
+  .main__sections .carousel .carousel-item {
+    height: 350px;
+  }
+}
+
+.main__sections .carousel-item img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 500px;
+}
+
+.main__sections .carousel {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+@media (max-width: 360px) {
+  .main__sections .carousel {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+.main__sections #section__home img:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.main__sections .section__products {
+  margin: 1.5rem 2rem 1.5rem 2rem;
+}
+
+.main__sections .section__products .card .card-body .card-title {
+  text-align: center;
+}
+
+.main__sections .section__products .card .card-body .card-text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.main__sections .section__products .card .bg-primary {
+  background: linear-gradient(30deg, #060516 0%, #1f053e 50%, #2a0079 100%);
+}
+
+.main__sections .section__products .card .card-footer .text-muted span {
+  color: #000;
+  font-weight: bolder;
+}
+
+.main__sections #section__albumes, .main__sections #section__home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main__sections .main__contact--form {
+  margin: 45px 45px 0px 45px;
+}
+
+.main__sections .main__contact--form fieldset {
+  border: 5px solid #c5c5c5;
+  background: #ddd;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.main__sections .main__contact--form fieldset legend {
+  text-align: center;
+  background: linear-gradient(30deg, #060516 0%, #1f053e 50%, #2a0079 100%);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+@media (max-width: 360px) {
+  .main__sections .main__contact--form fieldset legend {
+    font-size: 20px;
+  }
+}
+
+.main__sections .main__contact--form fieldset .item-margin {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main__sections .main__contact--form fieldset .label-margin {
+  margin-top: 12px;
+}
+
+.main__sections .main__contact--form fieldset .form-control {
+  width: 400px;
+}
+
+@media (max-width: 360px) {
+  .main__sections .main__contact--form fieldset .form-control {
+    width: 100%;
+  }
+}
+
+.main__sections .main__contact--form fieldset .form-text {
+  margin-top: 25px;
+}
+
+.main__sections .main__contact--form fieldset .block-label {
+  display: block;
+}
+
+.main__sections .main__contact--form fieldset .label-news {
+  padding-top: 3px;
+}
+
+.main__sections .main__contact--form fieldset .btn {
+  margin-right: 10px;
+}
+
+/* ----------> FOOTER INDEX */
+.footer__indexflex--container, .header__indexflex--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__indexflex--container .footer__index--copyright, .header__indexflex--container .footer__index--copyright {
+  color: #fff;
+  margin: 0px 0px 5px 15px;
+}
+
+.footer__indexflex--container .footer__index--developer h5, .header__indexflex--container .footer__index--developer h5 {
+  display: inline-block;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.footer__indexflex--container .footer__index--developer a, .header__indexflex--container .footer__index--developer a {
+  color: #fff;
+}
+
+.footer__indexflex--container .footer__index--developer a i, .header__indexflex--container .footer__index--developer a i {
+  margin: 0px 15px 0px 0px;
+}
+
+.footer__indexflex--container .footer__index--developer a .color-effect:hover, .header__indexflex--container .footer__index--developer a .color-effect:hover {
+  color: #198754;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+/* ----------> FOOTER SECTIONS */
+.footer__sections {
+  background: linear-gradient(30deg, #060516 0%, #1f053e 50%, #2a0079 100%);
+}
+
+.footer__sections .footer__logo img {
+  height: 75px;
+  margin-bottom: 1.3rem;
+  margin-left: 2.5px;
+}
+
+.footer__sections .footer__logo img:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.footer__sections .color-effect:hover {
+  color: #198754;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.footer__sections .banner-transparency {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/*# sourceMappingURL=estilos.css.map */

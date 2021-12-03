@@ -1,0 +1,226 @@
+/* ----------> MAIN INDEX */
+.main__indexflex--container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: unset;
+  .main__index--enter {
+    color: $white-color;
+    font-size: 100%;
+    text-transform: $big-font;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    @media (max-width: 360px) {
+      margin-top: 75px;
+    }
+  }
+  .main__enter--image {
+    height: 40px;
+    img {
+      height: 100%;
+    }
+  }
+  .main__enter--image {
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+  }
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .main__index--name {
+    margin: 20px;
+    img {
+      height: 230px;
+      @media (max-width: 360px) {
+        height: 170px;
+      }
+    }
+    img:hover {
+      transform: scale(1.1, 1.1);
+    }
+  }
+  .main__index--follow {
+    color: $white-color;
+    font-size: 100%;
+    text-transform: $big-font;
+    text-align: center;
+    margin: 210px 0px 15px 0px;
+    @media (max-width: 360px) {
+      margin: 250px 0px 15px 0px;
+    }
+  }
+  .main__index--redes a {
+    color: $white-color;
+    i {
+      margin: 5px 20px 260px 20px;
+      @media (max-width: 360px) {
+        margin: 5px 20px 240px 20px;
+      }
+    }
+    .color-effect:hover {
+      color: $green-color;
+      transform: scale(1.2, 1.2);
+    }
+  }
+}
+
+/* ----------> MAIN SECTIONS */
+.main__sections {
+  background-color: $white-color;
+  .main__home--title {
+    text-align: center;
+    color: $black-color;
+    text-transform: $big-font;
+    width: 350px;
+    margin: 2rem 32rem 2rem 32rem;
+    padding: 6px 5px 0px 5px;
+    border-radius: 10px;
+    @media (max-width: 360px) {
+      margin-left: 42px;
+      width: 275px;
+    }
+  }
+  .main__home--title:hover {
+    background: $green-color;
+    color: $white-color;
+    transform: scale(1.1, 1.1);
+  }
+  .main__about--title {
+    @extend .main__home--title;
+    margin-left: 33.5rem;
+    margin-right: 33.5rem;
+    width: 300px;
+    @media (max-width: 360px) {
+      margin-left: 62px;
+      width: 235px;
+    }
+  }
+  .main__text {
+    p {
+      color: $black-color;
+      margin: 0rem 100px 2rem 100px;
+      text-align: justify;
+      font-size: 110%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+      @media (max-width: 360px) {
+        font-size: 15px;
+        text-align: center;
+      }
+    }
+    .bottom__text {
+      margin-top: 2.5rem;
+      margin-bottom: -0.5rem;
+    }
+  }
+  .carousel .carousel-item {
+    height: 500px;
+    @media (max-width: 360px) {
+      height: 350px;
+    }
+  }
+  .carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+  }
+  .carousel {
+    margin-left: 25%;
+    margin-right: 25%;
+    @media (max-width: 360px) {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+  #section__home {
+    @extend #section__albumes;
+    img:hover {
+      transform: scale(1.1, 1.1);
+    }
+  }
+  .section__products {
+    margin: 1.5rem 2rem 1.5rem 2rem;
+    .card {
+      .card-body {
+        .card-title {
+          text-align: center;
+        }
+        .card-text {
+          text-align: center;
+          margin-top: 10px;
+        }
+      }
+      .bg-primary {
+        background: $gradient-color;
+      }
+      .card-footer {
+        .text-muted {
+          span {
+            color: $black-color;
+            font-weight: bolder;
+          }
+        }
+      }
+    }
+  }
+  #section__albumes {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .main__contact--form {
+    margin: 45px 45px 0px 45px;
+    fieldset {
+      border: 5px solid $grey-color;
+      background: $light-grey;
+      border-radius: 5px;
+      padding: 15px;
+      legend {
+        text-align: center;
+        background: $gradient-color;
+        color: $white-color;
+        padding: 5px 10px;
+        font-size: 30px;
+        border-radius: 5px;
+        @media (max-width: 360px) {
+          font-size: 20px;
+        }
+      }
+      .item-margin {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .label-margin {
+        margin-top: 12px;
+      }
+      .form-control {
+        width: 400px;
+        @media (max-width: 360px) {
+          width: 100%;
+        }
+      }
+      .form-text {
+        margin-top: 25px;
+      }
+      .block-label {
+        display: block;
+      }
+      .label-news {
+        padding-top: 3px;
+      }
+      .btn {
+        margin-right: 10px;
+      }
+    }
+  }
+}
